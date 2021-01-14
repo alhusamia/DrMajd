@@ -131,7 +131,7 @@
           </div>
           <div></div>
         </div>
-        <!-- <div class="comparison">
+        <div class="comparison">
           <div></div>
           <div>
             <div class="T1_comp">WHY EON ALIGNER</div>
@@ -150,7 +150,7 @@
             </div>
           </div>
           <div></div>
-        </div> -->
+        </div>
         <div class="Doctor">
           <div class="D1">World class location and expertise</div>
           <div class="G-D">
@@ -188,8 +188,11 @@
               <button class="footer-two-btn-1" onclick="Book()">
                 LEARN MORE
               </button>
-              <button class="footer-two-btn-2" onclick="Book()">
+              <button class="footer-two-btn-2 Desctop" onclick="Book()">
                 BOOK YOUR CONSULTATION
+              </button>
+              <button class="footer-two-btn-2 Mobile" onclick="Book()">
+                BOOK NOW
               </button>
             </div>
 
@@ -208,7 +211,7 @@
             </div>
             <div class="modal-body" id="body">
               <form id="myForm">
-                <label>Name</label><br />
+                <label>Name</label>
                 <input
                   type="text"
                   id="name"
@@ -216,8 +219,8 @@
                   value=""
                   placeholder="Type your name here ..."
                   required
-                /><br />
-
+                /><br /><br />
+                <label>Contact Method</label>
                 <div style="display: flex; margin: 10px 0">
                   <input type="radio" id="phone" name="contact" value="phone" />
                   <label>Phone</label><br />
@@ -232,6 +235,7 @@
                   <label>Email</label><br />
                 </div>
                 <br />
+                <label id="contValue">Contact</label>
                 <input
                   type="text"
                   id="contact"

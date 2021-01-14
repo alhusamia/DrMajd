@@ -1,7 +1,7 @@
 var modal = document.getElementById("Modal");
 const body = document.getElementById("body");
 const greet = document.getElementById("greet");
-
+const contValue = document.getElementById("contValue");
 var phone = document.getElementById("phone");
 var WhatsApp = document.getElementById("WhatsApp");
 var Email = document.getElementById("Email");
@@ -18,6 +18,7 @@ function Book() {
   body.style.display = "block";
   greet.style.display = "none";
   cont.style.display = "none";
+  contValue.style.display = "none";
   formel.reset();
 }
 
@@ -33,18 +34,24 @@ window.onclick = function (event) {
 
 phone.onclick = function () {
   cont.style.display = "block";
+  contValue.style.display = "block";
+  contValue.innerHTML = "Phone";
   cont.placeholder = "+964 xx xxxxxxx";
   method = "phone";
 };
 
 WhatsApp.onclick = function () {
   cont.style.display = "block";
+  contValue.style.display = "block";
+  contValue.innerHTML = "WhatsApp";
   cont.placeholder = "+964 xx xxxxxxx";
   method = "whatsapp";
 };
 
 Email.onclick = function () {
   cont.style.display = "block";
+  contValue.style.display = "block";
+  contValue.innerHTML = "Email";
   cont.placeholder = "****@gmail.com";
   method = "email";
 };

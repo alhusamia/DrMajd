@@ -34,11 +34,12 @@
   grid-template-columns: 1fr 20fr 1fr;
   align-items: center;
 }
-.mobile-header{
+.mobile-header {
   display: none;
 }
 .Main {
   position: relative;
+  background-color: #b7a196;
 }
 
 .M_right {
@@ -65,7 +66,7 @@
   transform: matrix(0.99, -0.12, 0.12, 0.99, 0, 0);
   color: white;
   position: absolute;
-  bottom: 45%;
+  bottom: 39%;
   left: 64%;
 }
 
@@ -76,7 +77,7 @@
   text-align: center;
   font-family: OpenSansRegular;
   position: absolute;
-  bottom: 39%;
+  bottom: 33%;
   left: 64%;
 }
 .T2 {
@@ -123,7 +124,7 @@
 
 .btn {
   border: none;
-  padding: 10px 15px;
+  padding: 16px 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -137,16 +138,16 @@
   cursor: pointer;
   font-family: CodeBold;
   position: absolute;
-  bottom: 25%;
-  left: 63%;
+  bottom: 19%;
+  left: 60%;
 }
 .btnModal {
   border: none;
-  padding: 10px 15px;
+  padding: 10px 24px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 10px;
   outline: none;
   justify-content: center;
@@ -160,12 +161,12 @@
 .Logo1 {
   position: absolute;
   left: 59%;
-  bottom: 80%;
+  bottom: 76%;
 }
 .Logo2 {
   position: absolute;
   left: 67%;
-  bottom: 63%;
+  bottom: 56%;
 }
 
 .Cases {
@@ -377,7 +378,9 @@
   grid-gap: 1em;
   padding-bottom: 26px;
 }
-
+#contValue {
+  display: none;
+}
 .footer-two {
   background-color: #999393;
   display: grid;
@@ -513,7 +516,7 @@
 }
 
 .modal-body {
-  padding: 2px 16px;
+  padding: 2px 20px 20px;
   display: block;
 }
 
@@ -532,7 +535,7 @@
 }
 input[type="text"] {
   width: 100%;
-  padding: 13px;
+  padding: 8px 16px;
   box-sizing: border-box;
   font-size: 16px;
   margin: 10px 0;
@@ -545,6 +548,7 @@ label {
   display: block;
   font-family: OpenSansBold;
   color: #b7a196;
+  text-align: left;
 }
 select {
   width: 100%;
@@ -602,13 +606,37 @@ option {
     transform: rotate(360deg);
   }
 }
+.Mobile {
+  display: none;
+}
+.Desctop {
+  display: block;
+}
 @media (max-width: 839px) {
-  .mobile-header{
+  .Desctop {
+    display: none;
+  }
+  .Mobile {
+    display: block;
+  }
+  .BackMain {
+    width: 100%;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    bottom: 13%;
+    left: 54%;
+  }
+  .modal-content {
+    width: 90%;
+  }
+  .mobile-header {
     display: block;
     background-color: #999393;
   }
-  .header-logo-mobile{
-    width: 200px;
+  .header-logo-mobile {
+    width: 160px;
     padding-top: 40px;
     padding-bottom: 25px;
   }
@@ -629,28 +657,47 @@ option {
   .C-cards {
     grid-template-columns: 1fr 1fr;
   }
-  .T2{
-    font-size: 16px;
+  .aligner-container {
+    font-size: 18px;
+    left: 50%;
+    bottom: 45%;
   }
-  .T3{
+  .Logo2 {
+    width: 70px;
+    height: auto;
+    bottom: 74%;
+    left: 56%;
+  }
+  .Logo1 {
+    display: none;
+  }
+  .T1 {
+    font-size: 11px;
+    left: 51%;
+  }
+  .T2 {
+    font-size: 16px;
+    padding: 30px 13px 10px;
+  }
+  .T3 {
     font-size: 23px;
   }
-  .T4{
+  .T4 {
     font-size: 32px;
   }
-  .T5{
+  .T5 {
     font-size: 18px;
   }
-  .T6{
+  .T6 {
     font-size: 16px;
   }
-  .T7{
+  .T7 {
     font-size: 18px;
   }
-  .T8{
+  .T8 {
     font-size: 23px;
   }
-  .TR img{
+  .TR img {
     width: 100%;
   }
   .comparison {
@@ -663,60 +710,145 @@ option {
   .IMG {
     grid-row: 1;
   }
-  .TT1{
-    font-size: 18px;
+  .TT1 {
+    font-size: 17px;
+    text-align: start;
+    line-height: 20px;
   }
-  .Consultation{
+  .TT2 {
+    font-size: 21px;
+  }
+  .TT3 {
+    font-size: 12px;
+  }
+  .Consultation {
     grid-template-columns: 1fr;
+    background-color: #b7a196;
   }
-  .c_card{
-    font-size: 18px;
+  .c_card {
+    font-size: 16px;
+    background-color: #999393;
   }
-  .C_card{
-    font-size: 18px;
+  .C_card {
+    font-size: 16px;
+    background-color: #999393;
+    padding: 14px 30px;
   }
-  .btn2{
-    font-size: 24px;
+  .btn2 {
+    font-size: 20px;
     padding: 16px;
   }
-  .D1{
-    font-size: 30px;
-    line-height: 40px;
+  .D1 {
+    font-size: 18px;
   }
   .D2 {
-    font-size: 30px;
+    font-size: 18px;
     padding: 24px;
-    line-height: 40px;
+    line-height: 21px;
   }
   .D3 {
-    font-size: 30px;
+    font-size: 24px;
   }
   .D4 {
     text-align: center;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .footer-two {
     grid-template-columns: 1fr;
+    padding-top: 24px;
   }
   .footer-two-text {
-    text-align: center;
-    font-size: 18px;
+    text-align: start;
+    font-size: 16px;
+    grid-gap: 0em;
+    padding-right: 12px;
   }
   .footer-two-container {
-    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+  .footer-two-text span {
+    display: none;
   }
   .Btn {
     grid-template-columns: 1fr;
     padding: 12px;
+    grid-gap: 1em;
   }
   .footer-two-btn-1 {
     font-size: 18px;
   }
   .footer-two-btn-2 {
     font-size: 18px;
+    grid-row: 1;
   }
   .G-D {
     grid-template-columns: 1fr;
+  }
+  .Mcomparison {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    gap: 50px;
+    justify-self: center;
+    padding: 0px;
+  }
+  .points {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+  .points img {
+    width: 100%;
+  }
+  .point-one {
+    position: absolute;
+    left: 20%;
+    right: 30%;
+    bottom: 52%;
+    color: #999393;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+  }
+  .point-two {
+    position: absolute;
+    left: 20%;
+    right: 30%;
+    bottom: 36%;
+    color: #999393;
+    font-size: 10px;
+    text-align: center;
+  }
+  .point-three {
+    position: absolute;
+    left: 20%;
+    right: 30%;
+    bottom: 16%;
+    color: #999393;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+  }
+  .point-four {
+    position: absolute;
+    left: 20%;
+    right: 30%;
+    bottom: 0%;
+    color: #999393;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+  }
+  .point {
+    position: absolute;
+    left: 77%;
+    right: 15%;
+    bottom: 75%;
+    color: #999393;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    font-family: CodeBold;
   }
 }
