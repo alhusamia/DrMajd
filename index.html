@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles.css" />
-    <link rel="stylesheet" href="model.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap"
@@ -65,7 +64,7 @@
             <img src="./assets/images/Group 41.svg" alt="" class="Logo" />
             <div class="aligner-container">Invisible Braces</div>
             <div class="T1">Availabe Today</div>
-            <div><button class="btn">Book now!</button></div>
+            <div><button class="btn" onclick="Book()">Book now!</button></div>
           </div>
         </div>
         <div class="Cases">
@@ -89,7 +88,7 @@
             Offer is valid for consultations between <br />
             23rd,2020 and Jan 20th,2021
           </div>
-          <div class="T8">Don’t miss it and book now!</div>
+          <div class="T8" onclick="Book()">Don’t miss it and book now!</div>
         </div>
         <div class="TeethModel">
           <div></div>
@@ -118,7 +117,9 @@
               Consultation cost is 200 AED<br />
               (Will be deducted from the total treatment cost)
             </div>
-            <button class="btn2">Book your consultation</button>
+            <button class="btn2" onclick="Book()">
+              Book your consultation
+            </button>
           </div>
           <div></div>
         </div>
@@ -176,26 +177,175 @@
           <div></div>
           <div class="footer-two-container">
             <div class="Btn">
-              <button class="footer-two-btn-1">LEARN MORE</button>
-              <button class="footer-two-btn-2">BOOK YOUR CONSULTATION</button>
+              <button class="footer-two-btn-1" onclick="Book()">
+                LEARN MORE
+              </button>
+              <button class="footer-two-btn-2" onclick="Book()">
+                BOOK YOUR CONSULTATION
+              </button>
             </div>
 
             <div class="footer-two-text">
               Offer is valid for consultations between<br />
               Dec 23rd,2020 and Jan 20th,2021<br />
-              <span>Don’t miss it and book now!</span>
+              <span onclick="Book()">Don’t miss it and book now!</span>
             </div>
           </div>
           <div></div>
         </div>
+        <div class="model">
+          <div class="model-content">
+            <span class="close">x</span>
+            <div class="form-grid">
+              <form name="contact-form" id="form">
+                <div style="padding-bottom: 20px; color: #bdab99">
+                  <label id="name-label" for="name">Name</label><br />
+                  <input
+                    type="text"
+                    id="name-input"
+                    name="name"
+                    placeholder="name"
+                    required
+                  />
+                </div>
+                <div style="padding-bottom: 20px; color: #bdab99">
+                  Contact Method
+                  <div class="radio-div" style="padding-bottom: 10px">
+                    <div>
+                      <label
+                        class="label-container"
+                        for="email"
+                        id="email-label"
+                      >
+                        <input
+                          type="radio"
+                          class="radio"
+                          id="email-input"
+                          name="contact-method"
+                          value="email"
+                          required
+                        />
+                        Email
+                      </label>
+                    </div>
+                    <div>
+                      <label
+                        class="label-container"
+                        for="whats/app"
+                        id="whatsApp-label"
+                      >
+                        <input
+                          type="radio"
+                          class="radio"
+                          id="whatsApp-input"
+                          name="contact-method"
+                          value="whats/app"
+                        />
+                        WhatsApp
+                      </label>
+                    </div>
+                    <div>
+                      <label
+                        class="label-container"
+                        for=" phone"
+                        id="phone-label"
+                      >
+                        <input
+                          type="radio"
+                          class="radio"
+                          id="phone-input"
+                          name="contact-method"
+                          value="phone"
+                        />
+                        Phone
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="contact-input-div"
+                  style="padding-bottom: 20px; color: #bdab99"
+                >
+                  <label for="contact-input" id="contact-label"></label><br />
+                  <input
+                    type=""
+                    id="contact-input"
+                    name="contact-input"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div class="btn-grid">
+                  <button class="submit-btn">Send</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="thankyouPage">
+              <div>
+                Thank you for submitting.
+                <br />You have taken the first step towards your new smile!
+                <br />
+                one of the clinic team will contact you within the next 24
+                hours.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div></div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./LandingPageCss/main.js" charset="utf-8"></script>
+    <div id="Modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="close" id="close">&times;</div>
+        </div>
+        <div class="modal-body" id="body">
+          <form id="myForm">
+            <label>Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value=""
+              placeholder="Type your name here ..."
+              required
+            /><br />
+
+            <div style="display: flex; margin: 10px 0">
+              <input type="radio" id="phone" name="contact" value="phone" />
+              <label>Phone</label><br />
+              <input
+                type="radio"
+                id="WhatsApp"
+                name="contact"
+                value="WhatsApp"
+              />
+              <label>WhatsApp</label><br />
+              <input type="radio" id="Email" name="contact" value="Email" />
+              <label>Email</label><br />
+            </div>
+            <br />
+            <input
+              type="text"
+              id="contact"
+              name="contact input"
+              placeholder=""
+              value=""
+            />
+            <button type="submit" id="submit" class="btnModal">Submit</button>
+          </form>
+        </div>
+        <div class="greeting" id="greet">
+          <div>
+            Thank you for submitting.
+            <br />You have taken the first step towards your new smile! <br />
+            one of the clinic team will contact you within the next 24 hours.
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+    <script src="assets/Main.js"></script>
   </body>
 </html>
