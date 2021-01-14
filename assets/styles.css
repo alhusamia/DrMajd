@@ -34,6 +34,9 @@
   grid-template-columns: 1fr 20fr 1fr;
   align-items: center;
 }
+.mobile-header{
+  display: none;
+}
 .Main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -588,6 +591,15 @@ option {
   }
 }
 @media (max-width: 839px) {
+  .mobile-header{
+    display: block;
+    background-color: #999393;
+  }
+  .header-logo-mobile{
+    width: 200px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
   .greeting {
     padding: 0;
     font-size: 20px;
@@ -606,7 +618,7 @@ option {
     grid-template-columns: 1fr 1fr;
   }
   .T2{
-    font-size: 18px;
+    font-size: 16px;
   }
   .T3{
     font-size: 23px;
