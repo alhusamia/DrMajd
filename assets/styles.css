@@ -23,7 +23,9 @@
   font-display: swap;
   src: url("./fonts/Blinker-ExtraLight.ttf");
 }
-
+button {
+  outline: none;
+}
 .Body {
   max-width: 1400px;
   margin: 0 auto;
@@ -529,6 +531,7 @@
   font-size: 2em;
   font-family: OpenSansRegular;
   padding: 60px;
+  color: #999393;
 }
 
 .modal-footer {
@@ -547,11 +550,13 @@ input[type="text"] {
   border-radius: 5px;
   font-family: OpenSansRegular;
 }
+
 label {
   display: block;
   font-family: OpenSansBold;
   color: #b7a196;
   text-align: left;
+  padding-right: 1em;
 }
 select {
   width: 100%;

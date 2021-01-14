@@ -36,7 +36,7 @@ phone.onclick = function () {
   cont.style.display = "block";
   contValue.style.display = "block";
   contValue.innerHTML = "Phone";
-  cont.placeholder = "+964 xx xxxxxxx";
+  cont.placeholder = "+966 xx xxxxxxx";
   method = "phone";
 };
 
@@ -44,7 +44,7 @@ WhatsApp.onclick = function () {
   cont.style.display = "block";
   contValue.style.display = "block";
   contValue.innerHTML = "WhatsApp";
-  cont.placeholder = "+964 xx xxxxxxx";
+  cont.placeholder = "+966 xx xxxxxxx";
   method = "whatsapp";
 };
 
@@ -52,7 +52,7 @@ Email.onclick = function () {
   cont.style.display = "block";
   contValue.style.display = "block";
   contValue.innerHTML = "Email";
-  cont.placeholder = "****@gmail.com";
+  cont.placeholder = "email";
   method = "email";
 };
 
