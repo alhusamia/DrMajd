@@ -37,6 +37,9 @@
 .mobile-header {
   display: none;
 }
+.BackMain {
+  width: 100%;
+}
 .Main {
   position: relative;
   background-color: #b7a196;
