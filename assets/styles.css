@@ -35,11 +35,7 @@
   align-items: center;
 }
 .Main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  background-image: url("./images/Image\ 17.png");
-  background-repeat: no-repeat;
+  position: relative;
 }
 
 .M_right {
@@ -65,6 +61,9 @@
   font-size: 37px;
   transform: matrix(0.99, -0.12, 0.12, 0.99, 0, 0);
   color: white;
+  position: absolute;
+  bottom: 45%;
+  left: 64%;
 }
 
 .T1 {
@@ -73,6 +72,9 @@
   letter-spacing: 4.5px;
   text-align: center;
   font-family: OpenSansRegular;
+  position: absolute;
+  bottom: 39%;
+  left: 64%;
 }
 .T2 {
   color: #eaeaea;
@@ -131,6 +133,9 @@
   box-shadow: 1px 1px 4px #888888;
   cursor: pointer;
   font-family: CodeBold;
+  position: absolute;
+  bottom: 25%;
+  left: 63%;
 }
 .btnModal {
   border: none;
@@ -149,8 +154,15 @@
   font-family: CodeBold;
 }
 
-.Logo {
-  justify-self: center;
+.Logo1 {
+  position: absolute;
+  left: 59%;
+  bottom: 80%;
+}
+.Logo2 {
+  position: absolute;
+  left: 67%;
+  bottom: 63%;
 }
 
 .Cases {
