@@ -1,0 +1,451 @@
+@font-face {
+  font-family: Amsterdam;
+  font-display: swap;
+  src: url("./fonts/AmsterdamOneSlant-0WglP.ttf");
+}
+@font-face {
+  font-family: OpenSansRegular;
+  font-display: swap;
+  src: url("./fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: OpenSansBold;
+  font-display: swap;
+  src: url("./fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: CodeBold;
+  font-display: swap;
+  src: url("./fonts/CODE\ Bold.otf");
+}
+@font-face {
+  font-family: Blinker;
+  font-display: swap;
+  src: url("./fonts/Blinker-ExtraLight.ttf");
+}
+
+.Body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 20fr 1fr;
+  align-items: center;
+}
+.Main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-image: url("./images/Image\ 17.png");
+  background-repeat: no-repeat;
+}
+
+.M_right {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr 0.75fr 0.5fr 0.5fr;
+  align-items: center;
+  gap: 1em;
+  padding-top: 50px;
+  padding-bottom: 145px;
+  align-self: center;
+}
+
+.M_left {
+  display: grid;
+  align-items: center;
+}
+.Image {
+  width: 90%;
+  height: auto;
+}
+.aligner-container {
+  font-family: Amsterdam;
+  font-size: 37px;
+  transform: matrix(0.99, -0.12, 0.12, 0.99, 0, 0);
+  color: white;
+}
+
+.T1 {
+  color: white;
+  font-size: 30px;
+  letter-spacing: 4.5px;
+  text-align: center;
+  font-family: OpenSansRegular;
+}
+.T2 {
+  color: #eaeaea;
+  font-size: 25px;
+  padding: 30px 0;
+  font-family: CodeBold;
+}
+.T3 {
+  color: #eaeaea;
+  font-size: 43px;
+  font-family: OpenSansRegular;
+}
+.T4 {
+  color: #eaeaea;
+  font-size: 58px;
+  font-family: OpenSansBold;
+}
+.T5 {
+  color: #eaeaea;
+  font-size: 34px;
+  font-family: OpenSansBold;
+}
+.T6 {
+  color: #eaeaea;
+  font-size: 28px;
+  padding: 20px 0 17px;
+  font-family: Blinker;
+}
+.T7 {
+  color: #e7e7e7;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: OpenSansRegular;
+}
+.T8 {
+  color: #e7e7e7;
+  font-size: 38px;
+  text-decoration: underline;
+  font-family: CodeBold;
+}
+
+.btn {
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 51px;
+  border-radius: 10px;
+  outline: none;
+  justify-content: center;
+  background-color: #b7a196;
+  color: #e7e7e7;
+  box-shadow: 1px 1px 4px #888888;
+  cursor: pointer;
+  font-family: CodeBold;
+}
+
+.Logo {
+  justify-self: center;
+}
+
+.Cases {
+  background-color: #b7a196;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 35px 0;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-gap: 1em;
+  padding-bottom: 22px;
+}
+.card {
+  background-color: #999393;
+  border-radius: 24px;
+}
+.TeethModel {
+  background-color: #e7e7e7;
+  padding: 33px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.TT1 {
+  color: #999393;
+  font-size: 30px;
+  align-self: center;
+  font-family: OpenSansRegular;
+}
+.Consultation {
+  background-color: #999393;
+  padding: 35px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+}
+.TT2 {
+  color: #e7e7e7;
+  font-size: 34px;
+  text-align: center;
+  padding-bottom: 21px;
+  font-family: OpenSansRegular;
+}
+
+.C-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  padding-bottom: 12px;
+}
+.c_card {
+  background-color: #b7a196;
+  border-radius: 14px;
+  color: #e7e7e7;
+  font-size: 24px;
+  padding: 29px 21px;
+  font-family: OpenSansRegular;
+}
+.C_card {
+  background-color: #b7a196;
+  border-radius: 14px;
+  color: #e7e7e7;
+  font-size: 24px;
+  padding: 14px 68px;
+  margin-bottom: 7px;
+  font-family: OpenSansRegular;
+}
+.TT3 {
+  color: #e7e7e7;
+  font-size: 18px;
+  text-align: center;
+  font-family: OpenSansRegular;
+}
+.btn2 {
+  background-color: #e7e7e7;
+  border-radius: 16px;
+  padding: 26px 34px;
+  cursor: pointer;
+  color: #999393;
+  font-size: 36px;
+  margin-top: 32px;
+  box-shadow: 0px 3px 6px #00000029;
+  border: none;
+  font-family: CodeBold;
+}
+.comparison {
+  display: grid;
+  grid-template-columns: 2fr 9fr 2fr;
+  padding: 58px 0 64px;
+  background-color: #e7e7e7;
+  align-items: center;
+}
+.Mcomparison {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  gap: 50px;
+  justify-self: center;
+  padding: 0px 100px 100px 100px;
+}
+.T1_comp {
+  color: #999393;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 41px;
+  font-family: CodeBold;
+}
+.Image_comp {
+  width: 100%;
+}
+.points {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.point {
+  position: absolute;
+  left: 75%;
+  right: 15%;
+  bottom: 75%;
+  color: #999393;
+  font-size: 35px;
+  line-height: 1;
+  text-align: center;
+  font-family: CodeBold;
+}
+
+.point-one {
+  position: absolute;
+  left: 5%;
+  right: 15%;
+  bottom: 52%;
+  color: #999393;
+  font-size: 26px;
+  line-height: 1;
+  text-align: center;
+  font-family: OpenSansRegular;
+}
+.point-two {
+  position: absolute;
+  left: 5%;
+  right: 15%;
+  bottom: 36%;
+  color: #999393;
+  font-size: 26px;
+  text-align: center;
+  font-family: OpenSansRegular;
+}
+.point-three {
+  position: absolute;
+  left: 5%;
+  right: 15%;
+  bottom: 16%;
+  color: #999393;
+  font-size: 26px;
+  line-height: 1;
+  text-align: center;
+  font-family: OpenSansRegular;
+}
+.point-four {
+  position: absolute;
+  left: 5%;
+  right: 15%;
+  bottom: 0%;
+  color: #999393;
+  font-size: 26px;
+  line-height: 1;
+  text-align: center;
+  font-family: OpenSansRegular;
+}
+.Doctor {
+  background-color: #b7a196;
+}
+.D1 {
+  color: #e7e7e7;
+  font-size: 41px;
+  text-align: center;
+  padding: 45px 0 52px;
+  font-family: CodeBold;
+}
+.D2 {
+  color: #e7e7e7;
+  font-size: 40px;
+  text-align: center;
+  padding: 45px;
+  font-family: CodeBold;
+}
+.D3 {
+  color: #e7e7e7;
+  font-size: 38px;
+  text-align: center;
+  font-family: CodeBold;
+}
+.D4 {
+  color: #e7e7e7;
+  font-size: 24px;
+  font-family: OpenSansRegular;
+  text-align: left;
+  line-height: 28px;
+}
+.G-D {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+}
+.Row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  padding-bottom: 26px;
+}
+
+.footer-two {
+  background-color: #999393;
+  display: grid;
+  grid-template-columns: 1.5fr 10fr 0.5fr;
+  padding: 53px 0;
+  align-items: center;
+}
+.footer-two-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 1em;
+}
+.Btn {
+  padding-top: 17px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2em;
+}
+.footer-two-btn-1 {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px;
+  background-color: #b7a196;
+  color: #e7e7e7;
+  box-shadow: 1px 1px 4px #888888;
+  cursor: pointer;
+  font-family: CodeBold;
+}
+.footer-two-btn-2 {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px;
+  background-color: #b7a196;
+  color: #e7e7e7;
+  box-shadow: 1px 1px 4px #888888;
+  cursor: pointer;
+  font-family: CodeBold;
+}
+.footer-two-text {
+  color: #e7e7e7;
+  font-size: 22px;
+  text-align: left;
+  font-family: OpenSansRegular;
+}
+.footer-two-text span {
+  color: #bdab99;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: OpenSansBold;
+}
+@media (max-width: 839px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+  .TeethModel {
+    grid-template-columns: 1fr;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .C-cards {
+    grid-template-columns: 1fr;
+  }
+  .TR {
+    grid-row: 1;
+  }
+  .comparison {
+    grid-template-columns: 1fr;
+  }
+  .Row {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  .IMG {
+    grid-row: 1;
+  }
+  .footer-two {
+    grid-template-columns: 1fr;
+  }
+  .footer-two-container {
+    grid-template-columns: 1fr;
+  }
+  .Btn {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+  .G-D {
+    grid-template-columns: 1fr;
+  }
+}
