@@ -113,6 +113,7 @@
   font-size: 38px;
   text-decoration: underline;
   font-family: CodeBold;
+  cursor: pointer;
 }
 
 .btn {
@@ -122,6 +123,22 @@
   text-decoration: none;
   display: inline-block;
   font-size: 51px;
+  border-radius: 10px;
+  outline: none;
+  justify-content: center;
+  background-color: #b7a196;
+  color: #e7e7e7;
+  box-shadow: 1px 1px 4px #888888;
+  cursor: pointer;
+  font-family: CodeBold;
+}
+.btnModal {
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
   border-radius: 10px;
   outline: none;
   justify-content: center;
@@ -410,7 +427,172 @@
   cursor: pointer;
   font-family: OpenSansBold;
 }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.close {
+  color: #b7a196;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 20px 16px;
+  background-color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  display: block;
+}
+
+.greeting {
+  display: none;
+  text-align: center;
+  font-size: 2em;
+  font-family: OpenSansRegular;
+  padding: 60px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: white;
+  color: white;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 13px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 10px 0;
+  background-color: white;
+  border-color: gray;
+  border-radius: 5px;
+  font-family: OpenSansRegular;
+}
+label {
+  display: block;
+  font-family: OpenSansBold;
+  color: #b7a196;
+}
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #dddedf;
+  font-weight: bold;
+  color: grey;
+  border: none;
+}
+option {
+  background-color: #fefefe;
+  color: #000;
+  border: none;
+  font-family: OpenSansRegular;
+}
+.container {
+  position: relative;
+}
+#contact {
+  display: none;
+}
+.loader {
+  display: none;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media (max-width: 839px) {
+  .greeting {
+    padding: 0;
+    font-size: 20px;
+    padding: 20px;
+  }
   .App {
     grid-template-columns: 1fr 10fr 1fr;
   }
